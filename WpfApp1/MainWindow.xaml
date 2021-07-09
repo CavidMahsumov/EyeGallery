@@ -6,16 +6,65 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="{StaticResource SpecialColor2}" >
+
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="10*"/>
-            
+            <RowDefinition Height="19*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <ToolBar>
+        <Menu Height="20" VerticalAlignment="Top" Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="New">
+                    
+                </MenuItem>
+                <MenuItem Header="Open">
+
+                </MenuItem>
+                <MenuItem Header="Save">
+
+                </MenuItem>
+                <MenuItem Header="Save As">
+
+                </MenuItem>
+                <MenuItem Header="Exit">
+
+                </MenuItem>
+
+            </MenuItem>   
+            <MenuItem Header="Edit">
+                <MenuItem Header="Add File"></MenuItem>
+                <MenuItem Header="Add Folder"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="Tiles"></MenuItem>
+                <MenuItem Header="Small Icons"></MenuItem>
+                <MenuItem Header="Details"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="About">
                 
-            </ToolBar>
+            </MenuItem>
+
+
+        </Menu>
+        <Grid Grid.Row="1">
+           
+                <ListBox x:Name="listbox">
+                    <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel></WrapPanel>
+                    </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                </ListBox>
+            
         </Grid>
+            
+        
     </Grid>
 </Window>

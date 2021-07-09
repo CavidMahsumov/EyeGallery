@@ -20,6 +20,8 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<Image> Images { get; set; }
+        public Image image { get; set; }
         public MainWindow()
         {
             InitializeComponent();
