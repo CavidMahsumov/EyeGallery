@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="AboutWindow" Height="250" Width="400">
     <Grid Background="BurlyWood">
+        <Image Source="Images/ig.png" >
+            
+        </Image>
         <WrapPanel HorizontalAlignment="Center" >
         <TextBlock Text="About" FontFamily="Comic Sans MS" FontSize="20" HorizontalAlignment="Center"></TextBlock>
             

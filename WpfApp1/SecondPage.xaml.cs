@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using WpfApp1.Windows;
 
 namespace WpfApp1
 {
@@ -123,7 +124,6 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            timer.Stop();
             Close();
         }
 
@@ -148,6 +148,12 @@ namespace WpfApp1
         {
 
             this.Resources["ButtonFS"] = 350.0;
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            AboutWindow aboutWindow = new AboutWindow();
+            aboutWindow.ShowDialog();
         }
     }
 }

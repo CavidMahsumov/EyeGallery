@@ -34,7 +34,7 @@
                 <MenuItem Header="Save As">
 
                 </MenuItem>
-                <MenuItem Header="Exit">
+                <MenuItem Header="Exit" Click="MenuItem_Click_4">
 
                 </MenuItem>
 
@@ -48,7 +48,7 @@
                 <MenuItem Header="Small Icons" Click="MenuItem_Click"></MenuItem>
                 <MenuItem Header="Large" Click="MenuItem_Click_1"></MenuItem>
             </MenuItem>
-            <MenuItem Header="About">
+            <MenuItem Header="About" Click="MenuItem_Click_3" >
                 
             </MenuItem>
 
@@ -59,6 +59,7 @@
             <WrapPanel>
                 
             <Image Name="iimage"
+                   Source="Images/Gallery.jpg"
                
                    Width="1200" Margin="0,0,0,0"
                 >

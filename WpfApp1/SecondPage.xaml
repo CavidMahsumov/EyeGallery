@@ -45,7 +45,7 @@
                     <MenuItem Header="Small Icons" Click="MenuItem_Click"></MenuItem>
                     <MenuItem Header="Large" Click="MenuItem_Click_2"></MenuItem>
                 </MenuItem>
-                <MenuItem Header="About">
+                <MenuItem Header="About" Click='MenuItem_Click_3'>
 
                 </MenuItem>
 
@@ -55,7 +55,7 @@
         </Grid>
         <Grid Grid.Row="1" Background="BurlyWood">
             
-                <Button Background="BurlyWood" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1">
+                <Button Background="BurlyWood" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1" BorderThickness="0">
 
                 <Image Width="50"
                        Height="50"
