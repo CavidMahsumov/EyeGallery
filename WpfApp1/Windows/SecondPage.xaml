@@ -1,0 +1,204 @@
+﻿<Window x:Class="WpfApp1.SecondPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="SecondPage" Height="450" Width="800"
+        WindowStyle="None"
+        >
+    <Grid Background="#CCAA85">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Menu Height="20" VerticalAlignment="Top" Grid.Row="0" Background="SkyBlue">
+                <MenuItem Header="File">
+                    <MenuItem Header="New">
+
+                    </MenuItem>
+                    <MenuItem Header="Open">
+
+                    </MenuItem>
+                    <MenuItem Header="Save">
+
+                    </MenuItem>
+                    <MenuItem Header="Save As">
+
+                    </MenuItem>
+                    <MenuItem Header="Exit">
+
+                    </MenuItem>
+
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Add File"></MenuItem>
+                    <MenuItem Header="Add Folder"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="View">
+                    <MenuItem Header="Medium" Click="MenuItem_Click_1"></MenuItem>
+                    <MenuItem Header="Small Icons" Click="MenuItem_Click"></MenuItem>
+                    <MenuItem Header="Large" Click="MenuItem_Click_2"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="About">
+
+                </MenuItem>
+
+
+            </Menu>
+
+        </Grid>
+        <Grid Grid.Row="1" Background="BurlyWood">
+            
+                <Button Background="BurlyWood" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_1">
+
+                <Image Width="50"
+                       Height="50"
+                    Source="Images\Back.png"
+                    >
+                    
+                </Image>
+                </Button>
+                    
+            
+            <Image x:Name="MainImage" Width="{DynamicResource ButtonFS}" Height="{DynamicResource ButtonFS}">
+                
+                
+            </Image> 
+            
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <StackPanel>
+                        <TextBlock Margin="10" Background="White" Height="30" Width="200" Name="nametextblock">
+                            
+                        </TextBlock>
+                        <TextBlock  Background="White" Height="30" Width="200" Name="Pricetextbloxk">
+
+                        </TextBlock>
+                        <TextBlock Margin="10" Background="White" Height="30" Width="200" Name="DateTextblock" >
+
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Vertical" >
+                    <Label Content="Name : " 
+                           x:Name="namelbl"
+                           FontFamily="Comic Sans MS"
+                           FontSize="20"
+                           >
+                        
+                    </Label>
+                    <Label Content="Price : " 
+                           x:Name="Price1lbl"
+                           FontFamily="Comic Sans MS"
+                           FontSize="20"
+                           >
+
+                    </Label>
+                    <Label Content="Date : " 
+                           x:Name="Date1lbl"
+                           FontFamily="Comic Sans MS"
+                           FontSize="20"
+                           >
+
+                    </Label>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1">
+                    <StackPanel>
+                        <TextBlock Margin="10" Background="White" Height="30" Width="200" Name="Authortextbloxk">
+
+                        </TextBlock>
+                        <TextBlock  Background="White" Height="30" Width="200" Name="Descriptiontextblock">
+
+                        </TextBlock>
+                        <Button Width="100"
+                                Height="25"
+                                Content="Read More..."
+                                Margin="100,0,0,0"
+                                Click="Button_Click"
+                                >
+                            
+                        </Button>
+                        
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Vertical" >
+                    <Label Content="Author : " 
+                           x:Name="Authorlbl"
+                           FontFamily="Comic Sans MS"
+                           FontSize="20"
+                           >
+
+                    </Label>
+                    <Label Content="Description : " 
+                           x:Name="Descriptionlbl"
+                           FontFamily="Comic Sans MS"
+                           FontSize="20"
+                           >
+
+                    </Label>
+
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3" >
+            <StackPanel Orientation="Horizontal"  >
+                <Button x:Name="PrevBtn"
+                        Margin="150,5,0,5"
+                        Content="Prev"
+                        Width="100"
+                         Style="{StaticResource  OrangeButton}"
+                        Click="PrevBtn_Click"
+                        >
+                    
+                </Button>
+                <Button x:Name="PauseBtn"
+                        Margin="20,5,0,5"
+                        Content="Pause"
+                        Width="100"
+                        Style="{StaticResource  OrangeButton}"
+                        Click="PauseBtn_Click"
+                        >
+
+                </Button>
+                <Button x:Name="autoplayCeBtn" Style="{StaticResource AutoPlay}"
+                        Margin="20,5,0,5"
+                        Content="autoPlay"
+                        Width="140" Click="autoplayCeBtn_Click"
+                        >
+
+                </Button>
+                <Button x:Name="nextBtn"
+                        Margin="20,5,0,5"
+                        Content="Next"
+                        Width="100"
+                        Style="{StaticResource OrangeButton}" Click="nextBtn_Click"
+                        >
+
+                </Button>
+            </StackPanel>
+            
+        </Grid>
+    </Grid>
+</Window>

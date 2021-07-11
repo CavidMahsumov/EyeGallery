@@ -10,21 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ReadAbout.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ReadAbout : Window
     {
-        public List<Image> Images { get; set; }
-        public Image image { get; set; }
-        public MainWindow()
+        public ReadAbout()
         {
+            this.DataContext = this;
             InitializeComponent();
         }
+            
+
     }
 }

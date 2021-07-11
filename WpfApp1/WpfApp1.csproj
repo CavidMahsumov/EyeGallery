@@ -55,11 +55,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Images.cs" />
+    <Compile Include="Windows\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ReadAbout.xaml.cs">
+      <DependentUpon>ReadAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SecondPage.xaml.cs">
+      <DependentUpon>SecondPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AutoPlayBtnStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ButtonSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ColorDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -67,11 +93,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Image.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\ReadAbout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SecondPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -105,6 +138,30 @@
     <Resource Include="Images\MonaLisa.jpg" />
     <Resource Include="Images\The Arnolfini Portrait.jpg" />
     <Resource Include="Images\The Harvest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\art.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Gallery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Georges.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Caspar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Edward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mARCEL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
